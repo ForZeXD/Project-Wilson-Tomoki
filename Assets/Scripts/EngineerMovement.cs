@@ -15,6 +15,11 @@ public class EngineerMovement : MonoBehaviour
     void Update()
     {
         Horizontal = Input.GetAxisRaw("Horizontal");
+
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            Jump();
+        }
     }
 
     private void FixedUpdate()
